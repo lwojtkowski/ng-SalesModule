@@ -1,0 +1,11 @@
+.bottom-bar {
+  margin-top: 1rem;
+}
+
+.app-basket {
+  position: flex;
+  display: inline-block;
+  margin: 80%;
+}
+
+

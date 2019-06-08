@@ -1,0 +1,41 @@
+.line {
+  border: 1px solid black;
+  display: inline;
+  width: 0px;
+  height: 1rem;
+  margin: 10px;
+
+}
+
+.products {
+  margin-bottom: 5px
+}
+
+.product-image {
+  float: left;
+  margin-right: 1rem;
+  height: 6.5rem;
+  width: auto;
+}
+.warehouse-local {
+  display: inline;
+}
+
+.warehouse-main {
+  display: inline;
+}
+
+.items {
+  display: inline-block;
+  align-content: center;
+  margin-right: 1.5rem;
+}
+
+.quantity {
+  width: 1.5rem;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+}

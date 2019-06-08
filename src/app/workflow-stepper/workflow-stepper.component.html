@@ -1,0 +1,50 @@
+<mat-horizontal-stepper labelPosition="bottom" [linear]="isLinear" #stepper>
+  <mat-step background-color="rgb(236, 236, 236)" [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Koszyk</ng-template>
+        <app-basket></app-basket>
+      <!--<app-delivery-type></app-delivery-type>-->
+      <!--<app-order></app-order>-->
+      <mat-card class="bottom-bar">
+        <div class="right">
+          <button mat-raised-button matStepperNext color="primary">Dalej</button>
+        </div>
+      </mat-card>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Dostawa</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="secondCtrl" required>
+      </mat-form-field>
+      <app-delivery-type></app-delivery-type>
+      <mat-card>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-card>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
+      <ng-template matStepLabel>Uzupełnianie danych</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Inne dane" formControlName="thirdCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Przypisanie karty</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

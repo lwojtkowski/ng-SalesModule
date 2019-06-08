@@ -1,0 +1,53 @@
+<div class="itemWrapper">
+  <div>
+    <h3>Koszyk</h3>
+    <mat-card class="product-card" *ngFor="let product of basketItems; let in = index">
+      <div class="items">
+        <img class="product-image" src="{{ product.descriptionImage }}">
+      </div>
+      <div class="items">
+        <div class="item-info">
+          <h4>{{ product.description }}</h4>
+          <p>{{ product.productType }}, nr kat: {{ product.productID }}</p>
+          <div class="warehouse" >
+            <p class="warehouse-local">M. Lokalny: {{ product.localWarehouseAviability}}</p>
+            <div class="line"></div>
+            <p class="warehouse-main">M. Główny: {{ product.mainWarehouseAviability}}</p>
+            <button mat-button color="primary" (click)="refreshAviability(product.productID); replaceItem(product.productID)">Zaktualizuj dostępność</button>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <button mat-button (click)="quantityValue(product.productID, 1, false)">-</button>
+        <mat-form-field class="quantity">
+          <input matInput type="number" [(ngModel)]="product.quantity" value="1" minlength="1" maxlenght="2">
+        </mat-form-field>
+        <button mat-button (click)="quantityValue(product.productID, 1, true)">+</button>
+      </div>
+      <div class="items">
+        <h2>{{product.price}} zł</h2>
+      </div>
+      <button mat-button color="primary" (click)="deleteItem(product.productID)">X</button>
+    </mat-card>
+  </div>
+  <div class="summary">
+    <h3>Podsumowanie</h3>
+    <mat-card>
+      <p>Produkty:</p>
+      <div class="summaryWrapper" *ngFor="let product of basketItems">
+        <div class="summary-info">
+          <p>{{ product.description }}</p>
+          <p>{{ product.productType }}</p>
+        </div>
+        <p class="summary-item">{{ product.quantity }} szt</p>
+        <p class="summary-item">{{ product.price }} zł</p>
+      </div>
+      <div class="line2"></div>
+      <div class="summary-item">
+        <p>Suma: </p>
+        <p>{{ SummaryPrice() }} zł</p>
+      </div>
+      <button class="summary-button" mat-raised-button color="primary" (click)="SummaryPrice()">Dalej</button>
+    </mat-card>
+  </div>
+</div>

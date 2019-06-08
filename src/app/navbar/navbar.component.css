@@ -1,0 +1,25 @@
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.para-1 {
+  font-size: 1rem;
+}
+
+.line {
+  border: 1px solid black;
+  height: 1rem;
+  margin: 10px;
+}
+
+.title {
+  margin-right: 30px;
+}
+
+.mat-toolbar {
+  background-color: white;
+  border-top: 1px solid lightgray;
+  border-bottom: 0.5px solid lightgray;
+  margin-top: 1rem;
+}
+

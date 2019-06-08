@@ -1,0 +1,109 @@
+<h3>Dostawa</h3>
+<mat-card>
+  <div class="product-card">
+    <div class="items">
+      <img class="product-image" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+    </div>
+    <div class="items">
+      <h4>Samsung AddWash Slim WW60K42109W</h4>
+      <p>pralka, nr kat: 12345678</p>
+      <div class="warehouse">
+        <p class="warehouse-local">M. Lokalny: 0</p>
+        <div class="line"></div>
+        <p class="warehouse-main">M. Główny: 10</p>
+        <button mat-button color="primary">Zaktualizuj dostępność</button>
+      </div>
+    </div>
+    <div class="items">
+      <button mat-button>-</button>
+      <mat-form-field class="quantity">
+        <input matInput value="1">
+      </mat-form-field>
+      <button mat-button>+</button>
+    </div>
+    <div class="items">
+      <h2>1599 zł</h2>
+    </div>
+    <div class="items">
+      <button mat-button color="primary">X</button>
+    </div>
+  </div>
+  <div>
+    <mat-button-toggle-group #group="matButtonToggleGroup">
+      <mat-button-toggle value="inStore" aria-label="Text align left">
+        <i class="material-icons">shopping_cart</i>
+        W sklepie
+      </mat-button-toggle>
+      <mat-button-toggle value="toHome" aria-label="Text align left">
+        <i class="material-icons">home</i>
+        Do domu
+      </mat-button-toggle>
+      <mat-button-toggle value="toStore" aria-label="Text align left">
+          <i class="material-icons">shopping_cart</i>
+          Do sklepu
+      </mat-button-toggle>
+      <mat-button-toggle value="toHome" aria-label="Text align left">
+        <i class="material-icons">home</i>
+        Do domu
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+    <!--<button mat-stroked-button color="primary" (click)="onClick">
+      <i class="material-icons">shopping_cart</i>
+      W Sklepie
+    </button>
+    <button mat-button (click)="onClick">
+      <i class="material-icons">home</i>
+      Do domu
+    </button>
+    <button mat-button (click)="onClick">
+      <i class="material-icons">shopping_cart</i>
+      Do sklepu
+    </button>
+    <button mat-button (click)="onClick">
+      <i class="material-icons">home</i>
+      Do domu
+    </button> -->
+  </div>
+</mat-card>
+
+<mat-card>
+  <div class="product-card">
+    <div class="items">
+      <img class="product-image" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+    </div>
+    <div class="items">
+      <h4>Samsung AddWash Slim WW60K42109W</h4>
+      <p>pralka, nr kat: 12345678</p>
+      <div class="warehouse">
+        <p class="warehouse-local">M. Lokalny: 0</p>
+        <div class="line"></div>
+        <p class="warehouse-main">M. Główny: 10</p>
+        <button mat-button color="primary">Zaktualizuj dostępność</button>
+      </div>
+    </div>
+    <div class="items">
+      <button mat-button>-</button>
+      <mat-form-field class="quantity">
+        <input matInput value="1">
+      </mat-form-field>
+      <button mat-button>+</button>
+    </div>
+    <div class="items">
+      <h2>1599 zł</h2>
+    </div>
+    <div class="items">
+      <button mat-button color="primary">X</button>
+    </div>
+  </div>
+</mat-card>
+
+<h3>Podsumowanie</h3>
+<mat-card>
+  <p>Produkty:</p>
+  <div class="items">
+      <p>Samsung AddWash Slim WW60K42109W</p>
+      <p>pralka</p>
+  </div>
+  <p class="items">1 szt</p>
+  <p class="items">1599 zł</p>
+</mat-card>

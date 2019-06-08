@@ -1,0 +1,105 @@
+.line {
+  border: 1px solid black;
+  display: inline;
+  width: 0px;
+  height: 1rem;
+  margin: 10px;
+}
+
+.products {
+  margin-bottom: 5px
+}
+
+.product-image {
+  float: left;
+  margin-right: 1rem;
+  height: 6.5rem;
+  width: auto;
+}
+.warehouse-local {
+  display: inline;
+}
+
+.warehouse-main {
+  display: inline;
+}
+
+.quantity {
+  width: 1.5rem;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+}
+
+mat-card {
+  margin-bottom: 0.5rem;
+}
+
+.line2 {
+  border: 1px solid black;
+  display: flex;
+  align-self: center;
+  width: 98%;
+  height: 0;
+  margin: 5px;
+}
+
+.itemWrapper{
+  display: flex;
+  position: relative;
+  align-items: auto;
+  margin: auto;
+}
+
+.summary {
+  margin-left: 1rem;
+}
+
+.product-image {
+  height: 7.5rem;
+  width: auto;
+  margin-top: 0.9rem;
+}
+.product-card {
+  display: flex;
+  position: relative;
+}
+
+.items-info {
+  display: flex;
+  margin-right: 1.5rem;
+}
+
+.items {
+  display: flex;
+  position: relative;
+  margin: auto 1rem auto auto;
+}
+
+.summary-item {
+  display: flex;
+  position: relative;
+  margin-left: 1.5rem;
+}
+.summary-info {
+  width: 14rem;
+}
+
+.summaryWrapper {
+  display: flex;
+  position: relative;
+}
+
+.summary-button{
+  width: 95%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
