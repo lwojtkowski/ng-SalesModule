@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+      ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/2da3e4ac-46ca-4124-955a-085d0b88faac/resourceGroups/AKS/providers/Microsoft.Web/sites/ng-SalesModule",
+    "appService.deploySubpath": ""
+}
